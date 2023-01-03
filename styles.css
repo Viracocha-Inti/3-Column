@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10%;
+}
+
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+  padding: 60px 40px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.suv {
+  background-color: hsl(184, 100%, 22%);
+  padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  padding: 60px 40px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sedan button,
+.suv button,
+.luxury button {
+  background-color: white;
+  padding: 10px 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 3px solid white;
+}
+
+div h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: white;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+
+div p {
+  font-family: "Lexend Deca", sans-serif;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+}
+
+div .img {
+  padding: 10px 0;
+}
+
+/* Desktop */
+@media screen and (min-width: 1440px) {
+  .container {
+    flex-direction: row;
+  }
+  .sedan {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0;
+  }
+  .luxury {
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 20px;
+  }
+}
